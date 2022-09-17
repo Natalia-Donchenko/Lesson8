@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+.background_content {
+  display: block;
+  margin: 0;
+  padding: 1.25rem;
+  font-size: 2rem;
+}
+
+/* модалка */
+.l-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.l-modal::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  width: 27rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.title {
+  width: 23rem;
+}
+
+.title h2 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #3E3E3E;
+}
+
+.title img {
+  position: absolute;
+  right: 2.5rem;
+  top: 2.68rem;
+  width: 0.81rem;
+  height: 0.81rem;
+}
+
+/* Основное уведомление */
+.notification {
+  width: 23rem;
+  margin-top: 0.75rem;
+  padding: 0.62rem;
+  background-color: #F0F1F3;
+  border-radius: 4px;
+}
+
+.notification::before {
+  display: inline-block;
+  margin-right: 0.5rem;
+  content: url(../icons/icon2.png);
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+}
+
+.notification_text {
+  display: inline-block;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
+  color: #3E3E3E;
+}
+
+/* Уточняющие классы для уведомления */
+.notification_i {
+  background-color: rgba(40, 73, 157, 0.09);
+}
+
+.notification_check {
+  background-color: #E9F8EB;
+}
+
+.notification_check::before {
+  content: url(../icons/icon1.png);
+}
+
+.notification_warning {
+  background-color: #FFF8E0;
+}
+
+.notification_warning::before {
+  content: url(../icons/icon3.png);
+}
+
+.notification_ban {
+  background-color: #FDEAE4;
+}
+
+.notification_ban::before {
+  content: url(../icons/icon4.png);
+}
+
+/* контент модалки */
+.content {
+  width: 23rem;
+  margin-bottom: 2rem;
+}
+
+.content p {
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.3rem;
+  color: #3E3E3E;
+}
+
+/* кнопки */
+.buttons {
+  width: 23rem;
+  margin-bottom: 1.88rem;
+  padding: 0;
+}
+
+.buttons button {
+  padding: 0.63rem 1.25rem;
+  background-color: white;
+  border: 0;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
+  color: black; 
+  text-align: center;
+}
+
+.buttons .one{
+  margin-right: 0.75rem;
+  background-color: #3E56AA;
+  color: white;
+}
+
+.buttons .two {
+  margin-right: 6.73rem;
+  background-color: rgba(0, 16, 61, 0.06);
+  color: #2C2D2E;
+}
+
+.buttons .three {
+  color: #3E56AA;
+}
+
+/* уточняющий класс для кнопки  one с позицией внизу */
+.buttons .bottom {
+  position: absolute;
+  bottom: -30px;
+}
